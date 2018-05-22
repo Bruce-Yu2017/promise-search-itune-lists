@@ -26,8 +26,9 @@
       <li class="list-group-item" *ngFor="let track of itunes.results">
         <!-- {{itunes | json}} -->
         <img src="{{track.thumbnail}}">
-        <a target="_blank" href="{{track.link}}">{{ track.track }}
-        </a>
+        <span>{{track.artist}}</span>
+        <a target="_blank" href="{{track.link}}">{{ track.track }}</a>
+        
       </li>
     </ul>
   </div>
